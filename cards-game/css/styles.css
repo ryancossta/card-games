@@ -1,0 +1,38 @@
+.container{
+    height:400px ;
+    width:220px ;
+    display:inline-flex ;
+    position:relative;
+    perspective:1000px ;
+    margin: 20px;
+    
+}
+.card-front, .card-back{
+    position:absolute ;
+    backface-visibility:hidden ;
+    transform-style: preserve-3d;
+    transition: all is ease;
+    align-items: center;
+
+}
+.card-front{
+    transform: rotateY(180deg);
+}
+.card-back{  
+    transform: rotateY(0deg);
+}
+.container:hover .card-front{
+transform: rotateY(0deg);
+}
+.container:hover .card-back{
+    transform: rotateY(180deg);
+    }
+    img{
+        height: 400px;
+        width: 220px;
+        
+        
+    }
+    body{
+        background-color: black;
+    }
